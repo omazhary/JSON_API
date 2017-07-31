@@ -177,7 +177,7 @@ function update_json_object(destination, identifier_field, identifier_value, loc
  * @returns {String} A string containing the latest identifier's value.
  */
 function get_latest_identifier(source, identifier_field) {
-  var result = 0;
+  var result = -1;
   for (var i = 0; i < source.length; i++) {
     var new_id = parseFloat(source[i][identifier_field]);
     if (new_id > result) {
